@@ -1,0 +1,7 @@
+select
+    schema_name(schema_id) as 'owner',
+    tabelas.name as 'tabela',
+    sum(partitions.rows) as 'linhas'
+from sys.tables as tabelas
+join sys.partitions as partitions on tabelas.object_id = partitions.object_id and partitions.index_id in (0,1)
+group by schema_name(schema_id), tabelas.name
