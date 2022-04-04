@@ -1,0 +1,2 @@
+select sum(PAYMENT_VALUE)
+from dim_PAYMENT
