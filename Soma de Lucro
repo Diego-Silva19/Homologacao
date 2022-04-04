@@ -1,0 +1,2 @@
+select sum(PROFIT)
+from fact_SALES
