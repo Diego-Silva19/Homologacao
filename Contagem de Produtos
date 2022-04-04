@@ -1,0 +1,2 @@
+select count(distinct PRODUCT_NAME)
+from dim_PRODUCT_CATEG
