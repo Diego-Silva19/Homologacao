@@ -1,0 +1,2 @@
+select sum(QUANTITY)
+from fact_SALES
