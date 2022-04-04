@@ -1,0 +1,2 @@
+select sum(SHIPPING_COST)
+from dim_SHIPPING
