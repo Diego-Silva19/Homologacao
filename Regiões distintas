@@ -1,0 +1,2 @@
+select count(distinct REGION)
+from dim_WORLD_MARKET
